@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visual Recognition Demo</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="undefined" name="ct">
+	<meta content="IBM Watson Visual Recognition" name="og:title">
+	<meta content="Visual Recognition uses deep learning algorithms to analyze images that can give you insights into your visual content. You can organize image libraries, understand an individual image, recognize food, detect faces, and create custom classifiers for specific results that are tailored to your needs." name="og:description">
+	<link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/training.css" rel="stylesheet">
+	<link href="/css/footer.css" rel="stylesheet">
+	<link href="/css/extra.css" rel="stylesheet">
+	<link href="/css/retraining.css" rel="stylesheet">
+	<!--from conversation-->
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="contentParent" class="responsive-columns-wrapper">
+    <div id="chat-column-holder" class="responsive-column content-column">
+      <div class="chat-column">
+        <div id="scrollingChat"></div>
+        <label for="textInput" class="inputOutline">
+          <input id="textInput" class="input responsive-column"
+            placeholder="Type something" type="text"
+            onkeydown="ConversationPanel.inputKeyDown(event, this)">
+        </label>
+      </div>
+    </div>
+    <!--div id="payload-column" class="fixed-column content-column"-->
+	<div id="visual-recognition-column-holder" class="visual-recognition-column content-column">
+		<div class="use--dropzone">
+			<form class="use--form use--dropzone hideload" data-upload-template-id="template-upload-use" id="use--fileupload" name="use--fileupload">
+				<div class="use--file-input-button-text">
+					<label class="use--file-input-button base--button" for="use--file"><span class="base--a">Select</span> or drag</label>
+				</div>
+				<input accept="image/*" class="use--file-input" id="use--file" name="images_file" title="Choose an image to upload" type="file">
+				<input class="use--image-data-input base--input" name="image_data" type="hidden">
+			</form>	
+		</div>
+		<div class="loading use--loading display-none">
+			<div class="loader-container">
+				<svg class="loader" viewbox="25 25 50 50">
+				<circle class="loader__path" cx="50" cy="50" r="20"></circle></svg>
+			</div>
+			<p class="base--p use--loading-message loading--message">Watson is classifying the image to determine a match...</p>
+		</div>
+		<div class="error use--error display-none">
+			<img class="use--error-image error--image" src="images/icons/alert.svg">
+			<p class="base--p use--error-message error--message">Visual Recognition is not available right now...</p>
+		</div>
+		<div class="use--output display-none">
+			<h2 class="base--h2 use--output-header">Watson sees...</h2>
+			<div class="use--output-row">
+				<div class="use--output-image-container"><img class="use--output-image"></div>
+				<div class="boxes" id="box"></div>
+				<div class="use--output-data"></div>
+			</div>
+		</div>
+	</div>
+	<script data-pace-options="{&quot;ajax&quot;: false}" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.iframe-transport.min.js">
+	</script>
+	<script src="/js/bundle.js">
+	</script>
+	<script src="/js/vendors/tealeaf.js">
+	</script>
+	<script src="js/common.js"></script>
+	<script src="js/api.js"></script>
+	<script src="js/conversation.js"></script>
+	<script src="js/global.js"></script>
+</body>
+</html>

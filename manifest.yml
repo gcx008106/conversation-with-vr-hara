@@ -1,0 +1,14 @@
+---
+declared-services:
+  visual-recognition-service:
+    label: watson_vision_combined
+    plan: free
+applications:
+- name: conversation-with-vr-hara
+  path: .
+  command: npm start
+  memory: 512M
+  services:
+  - Sma_test_Furutani
+  env:
+    NODE_ENV: production

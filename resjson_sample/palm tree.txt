@@ -1,0 +1,74 @@
+{
+  "custom_classes": 0,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "palm",
+              "score": 0.96,
+              "type_hierarchy": "\/plant\/tree\/palm"
+            },
+            {
+              "class": "tree",
+              "score": 0.96
+            },
+            {
+              "class": "plant",
+              "score": 0.96
+            },
+            {
+              "class": "dust storm",
+              "score": 0.612,
+              "type_hierarchy": "\/nature\/dust storm"
+            },
+            {
+              "class": "nature",
+              "score": 0.612
+            },
+            {
+              "class": "palmyra",
+              "score": 0.5,
+              "type_hierarchy": "\/plant\/tree\/palm\/fan palm\/palmyra"
+            },
+            {
+              "class": "fan palm",
+              "score": 0.501
+            },
+            {
+              "class": "gray color",
+              "score": 0.563
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default"
+        },
+        {
+          "classes": [
+            {
+              "class": "non-food",
+              "score": 1
+            }
+          ],
+          "classifier_id": "food",
+          "name": "food"
+        }
+      ],
+      "image": "d5092890-8883-11e7-a179-41a87f06adc9.jpg",
+      "faces": [
+        
+      ],
+      "text": "",
+      "words": [
+        
+      ]
+    }
+  ],
+  "images_processed": 1,
+  "raw": {
+    "classify": "%7B%22custom_classes%22%3A0%2C%22images%22%3A%5B%7B%22classifiers%22%3A%5B%7B%22classes%22%3A%5B%7B%22class%22%3A%22palm%22%2C%22score%22%3A0.96%2C%22type_hierarchy%22%3A%22%2Fplant%2Ftree%2Fpalm%22%7D%2C%7B%22class%22%3A%22tree%22%2C%22score%22%3A0.96%7D%2C%7B%22class%22%3A%22plant%22%2C%22score%22%3A0.96%7D%2C%7B%22class%22%3A%22dust%20storm%22%2C%22score%22%3A0.612%2C%22type_hierarchy%22%3A%22%2Fnature%2Fdust%20storm%22%7D%2C%7B%22class%22%3A%22nature%22%2C%22score%22%3A0.612%7D%2C%7B%22class%22%3A%22palmyra%22%2C%22score%22%3A0.5%2C%22type_hierarchy%22%3A%22%2Fplant%2Ftree%2Fpalm%2Ffan%20palm%2Fpalmyra%22%7D%2C%7B%22class%22%3A%22fan%20palm%22%2C%22score%22%3A0.501%7D%2C%7B%22class%22%3A%22gray%20color%22%2C%22score%22%3A0.563%7D%5D%2C%22classifier_id%22%3A%22default%22%2C%22name%22%3A%22default%22%7D%2C%7B%22classes%22%3A%5B%7B%22class%22%3A%22non-food%22%2C%22score%22%3A1%7D%5D%2C%22classifier_id%22%3A%22food%22%2C%22name%22%3A%22food%22%7D%5D%2C%22image%22%3A%22d5092890-8883-11e7-a179-41a87f06adc9.jpg%22%2C%22faces%22%3A%5B%5D%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%2C%22raw%22%3A%7B%7D%7D",
+    "detectFaces": "%7B%22images%22%3A%5B%7B%22faces%22%3A%5B%5D%2C%22image%22%3A%22d5092890-8883-11e7-a179-41a87f06adc9.jpg%22%7D%5D%2C%22images_processed%22%3A1%7D",
+    "recognizeText": "%7B%22images%22%3A%5B%7B%22image%22%3A%22d5092890-8883-11e7-a179-41a87f06adc9.jpg%22%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%7D"
+  }
+}

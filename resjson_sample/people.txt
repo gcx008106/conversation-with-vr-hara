@@ -1,0 +1,125 @@
+{
+  "custom_classes": 0,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "non-food",
+              "score": 0.994
+            }
+          ],
+          "classifier_id": "food",
+          "name": "food"
+        },
+        {
+          "classes": [
+            {
+              "class": "rebozo",
+              "score": 0.525,
+              "type_hierarchy": "\/garment\/scarf\/rebozo"
+            },
+            {
+              "class": "scarf",
+              "score": 0.528
+            },
+            {
+              "class": "garment",
+              "score": 0.532
+            },
+            {
+              "class": "soul mate",
+              "score": 0.521,
+              "type_hierarchy": "\/person\/soul mate"
+            },
+            {
+              "class": "person",
+              "score": 0.704
+            },
+            {
+              "class": "sweetheart",
+              "score": 0.511,
+              "type_hierarchy": "\/person\/sweetheart"
+            },
+            {
+              "class": "people",
+              "score": 0.575
+            },
+            {
+              "class": "couple",
+              "score": 0.501,
+              "type_hierarchy": "\/person\/couple"
+            },
+            {
+              "class": "mother's daughter",
+              "score": 0.5,
+              "type_hierarchy": "\/person\/child\/mother's daughter"
+            },
+            {
+              "class": "child",
+              "score": 0.5
+            },
+            {
+              "class": "maroon color",
+              "score": 0.643
+            },
+            {
+              "class": "alizarine red color",
+              "score": 0.506
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default"
+        }
+      ],
+      "image": "ae867f00-8884-11e7-bbc7-2f6731541786.jpg",
+      "faces": [
+        {
+          "age": {
+            "max": 24,
+            "min": 18,
+            "score": 0.395386
+          },
+          "face_location": {
+            "height": 127,
+            "left": 181,
+            "top": 95,
+            "width": 114
+          },
+          "gender": {
+            "gender": "FEMALE",
+            "score": 0.924142
+          }
+        },
+        {
+          "age": {
+            "max": 24,
+            "min": 18,
+            "score": 0.509354
+          },
+          "face_location": {
+            "height": 127,
+            "left": 301,
+            "top": 62,
+            "width": 125
+          },
+          "gender": {
+            "gender": "FEMALE",
+            "score": 0.989013
+          }
+        }
+      ],
+      "text": "",
+      "words": [
+        
+      ]
+    }
+  ],
+  "images_processed": 1,
+  "raw": {
+    "classify": "%7B%22custom_classes%22%3A0%2C%22images%22%3A%5B%7B%22classifiers%22%3A%5B%7B%22classes%22%3A%5B%7B%22class%22%3A%22non-food%22%2C%22score%22%3A0.994%7D%5D%2C%22classifier_id%22%3A%22food%22%2C%22name%22%3A%22food%22%7D%2C%7B%22classes%22%3A%5B%7B%22class%22%3A%22rebozo%22%2C%22score%22%3A0.525%2C%22type_hierarchy%22%3A%22%2Fgarment%2Fscarf%2Frebozo%22%7D%2C%7B%22class%22%3A%22scarf%22%2C%22score%22%3A0.528%7D%2C%7B%22class%22%3A%22garment%22%2C%22score%22%3A0.532%7D%2C%7B%22class%22%3A%22soul%20mate%22%2C%22score%22%3A0.521%2C%22type_hierarchy%22%3A%22%2Fperson%2Fsoul%20mate%22%7D%2C%7B%22class%22%3A%22person%22%2C%22score%22%3A0.704%7D%2C%7B%22class%22%3A%22sweetheart%22%2C%22score%22%3A0.511%2C%22type_hierarchy%22%3A%22%2Fperson%2Fsweetheart%22%7D%2C%7B%22class%22%3A%22people%22%2C%22score%22%3A0.575%7D%2C%7B%22class%22%3A%22couple%22%2C%22score%22%3A0.501%2C%22type_hierarchy%22%3A%22%2Fperson%2Fcouple%22%7D%2C%7B%22class%22%3A%22mother's%20daughter%22%2C%22score%22%3A0.5%2C%22type_hierarchy%22%3A%22%2Fperson%2Fchild%2Fmother's%20daughter%22%7D%2C%7B%22class%22%3A%22child%22%2C%22score%22%3A0.5%7D%2C%7B%22class%22%3A%22maroon%20color%22%2C%22score%22%3A0.643%7D%2C%7B%22class%22%3A%22alizarine%20red%20color%22%2C%22score%22%3A0.506%7D%5D%2C%22classifier_id%22%3A%22default%22%2C%22name%22%3A%22default%22%7D%5D%2C%22image%22%3A%22ae867f00-8884-11e7-bbc7-2f6731541786.jpg%22%2C%22faces%22%3A%5B%7B%22age%22%3A%7B%22max%22%3A24%2C%22min%22%3A18%2C%22score%22%3A0.395386%7D%2C%22face_location%22%3A%7B%22height%22%3A127%2C%22left%22%3A181%2C%22top%22%3A95%2C%22width%22%3A114%7D%2C%22gender%22%3A%7B%22gender%22%3A%22FEMALE%22%2C%22score%22%3A0.924142%7D%7D%2C%7B%22age%22%3A%7B%22max%22%3A24%2C%22min%22%3A18%2C%22score%22%3A0.509354%7D%2C%22face_location%22%3A%7B%22height%22%3A127%2C%22left%22%3A301%2C%22top%22%3A62%2C%22width%22%3A125%7D%2C%22gender%22%3A%7B%22gender%22%3A%22FEMALE%22%2C%22score%22%3A0.989013%7D%7D%5D%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%2C%22raw%22%3A%7B%7D%7D",
+    "detectFaces": "%7B%22images%22%3A%5B%7B%22faces%22%3A%5B%7B%22age%22%3A%7B%22max%22%3A24%2C%22min%22%3A18%2C%22score%22%3A0.395386%7D%2C%22face_location%22%3A%7B%22height%22%3A127%2C%22left%22%3A181%2C%22top%22%3A95%2C%22width%22%3A114%7D%2C%22gender%22%3A%7B%22gender%22%3A%22FEMALE%22%2C%22score%22%3A0.924142%7D%7D%2C%7B%22age%22%3A%7B%22max%22%3A24%2C%22min%22%3A18%2C%22score%22%3A0.509354%7D%2C%22face_location%22%3A%7B%22height%22%3A127%2C%22left%22%3A301%2C%22top%22%3A62%2C%22width%22%3A125%7D%2C%22gender%22%3A%7B%22gender%22%3A%22FEMALE%22%2C%22score%22%3A0.989013%7D%7D%5D%2C%22image%22%3A%22ae867f00-8884-11e7-bbc7-2f6731541786.jpg%22%7D%5D%2C%22images_processed%22%3A1%7D",
+    "recognizeText": "%7B%22images%22%3A%5B%7B%22image%22%3A%22ae867f00-8884-11e7-bbc7-2f6731541786.jpg%22%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%7D"
+  }
+}

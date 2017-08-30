@@ -1,0 +1,116 @@
+
+
+{
+  "custom_classes": 0,
+  "images": [
+    {
+      "classifiers": [
+        {
+          "classes": [
+            {
+              "class": "maraschino",
+              "score": 0.615,
+              "type_hierarchy": "\/food\/nutrition\/delicacy\/sweet\/maraschino"
+            },
+            {
+              "class": "sweet",
+              "score": 0.621
+            },
+            {
+              "class": "delicacy",
+              "score": 0.775
+            },
+            {
+              "class": "nutrition",
+              "score": 0.777
+            },
+            {
+              "class": "food",
+              "score": 0.777
+            },
+            {
+              "class": "jello",
+              "score": 0.601,
+              "type_hierarchy": "\/food\/nutrition\/delicacy\/gelatin\/jello"
+            },
+            {
+              "class": "gelatin",
+              "score": 0.633
+            },
+            {
+              "class": "rowanberry",
+              "score": 0.514,
+              "type_hierarchy": "\/fruit\/rowanberry"
+            },
+            {
+              "class": "fruit",
+              "score": 0.625
+            },
+            {
+              "class": "red currant",
+              "score": 0.5,
+              "type_hierarchy": "\/fruit\/berry\/red currant"
+            },
+            {
+              "class": "berry",
+              "score": 0.506
+            },
+            {
+              "class": "dark red color",
+              "score": 0.977
+            }
+          ],
+          "classifier_id": "default",
+          "name": "default"
+        },
+        {
+          "classes": [
+            {
+              "class": "strawberries and cream",
+              "score": 0.576,
+              "type_hierarchy": "\/sweet treat\/fruit dish\/strawberries and cream"
+            },
+            {
+              "class": "fruit dish",
+              "score": 0.576
+            },
+            {
+              "class": "sweet treat",
+              "score": 0.576
+            },
+            {
+              "class": "strawberry yogurt",
+              "score": 0.5,
+              "type_hierarchy": "\/dairy product\/yogurt\/strawberry yogurt"
+            },
+            {
+              "class": "yogurt",
+              "score": 0.521
+            },
+            {
+              "class": "dairy product",
+              "score": 0.522
+            }
+          ],
+          "classifier_id": "food",
+          "name": "food"
+        }
+      ],
+      "image": "657e3500-8884-11e7-a773-cd54b457e82e.png",
+      "faces": [
+        
+      ],
+      "text": "",
+      "words": [
+        
+      ]
+    }
+  ],
+  "images_processed": 1,
+  "raw": {
+    "classify": "%7B%22custom_classes%22%3A0%2C%22images%22%3A%5B%7B%22classifiers%22%3A%5B%7B%22classes%22%3A%5B%7B%22class%22%3A%22maraschino%22%2C%22score%22%3A0.615%2C%22type_hierarchy%22%3A%22%2Ffood%2Fnutrition%2Fdelicacy%2Fsweet%2Fmaraschino%22%7D%2C%7B%22class%22%3A%22sweet%22%2C%22score%22%3A0.621%7D%2C%7B%22class%22%3A%22delicacy%22%2C%22score%22%3A0.775%7D%2C%7B%22class%22%3A%22nutrition%22%2C%22score%22%3A0.777%7D%2C%7B%22class%22%3A%22food%22%2C%22score%22%3A0.777%7D%2C%7B%22class%22%3A%22jello%22%2C%22score%22%3A0.601%2C%22type_hierarchy%22%3A%22%2Ffood%2Fnutrition%2Fdelicacy%2Fgelatin%2Fjello%22%7D%2C%7B%22class%22%3A%22gelatin%22%2C%22score%22%3A0.633%7D%2C%7B%22class%22%3A%22rowanberry%22%2C%22score%22%3A0.514%2C%22type_hierarchy%22%3A%22%2Ffruit%2Frowanberry%22%7D%2C%7B%22class%22%3A%22fruit%22%2C%22score%22%3A0.625%7D%2C%7B%22class%22%3A%22red%20currant%22%2C%22score%22%3A0.5%2C%22type_hierarchy%22%3A%22%2Ffruit%2Fberry%2Fred%20currant%22%7D%2C%7B%22class%22%3A%22berry%22%2C%22score%22%3A0.506%7D%2C%7B%22class%22%3A%22dark%20red%20color%22%2C%22score%22%3A0.977%7D%5D%2C%22classifier_id%22%3A%22default%22%2C%22name%22%3A%22default%22%7D%2C%7B%22classes%22%3A%5B%7B%22class%22%3A%22strawberries%20and%20cream%22%2C%22score%22%3A0.576%2C%22type_hierarchy%22%3A%22%2Fsweet%20treat%2Ffruit%20dish%2Fstrawberries%20and%20cream%22%7D%2C%7B%22class%22%3A%22fruit%20dish%22%2C%22score%22%3A0.576%7D%2C%7B%22class%22%3A%22sweet%20treat%22%2C%22score%22%3A0.576%7D%2C%7B%22class%22%3A%22strawberry%20yogurt%22%2C%22score%22%3A0.5%2C%22type_hierarchy%22%3A%22%2Fdairy%20product%2Fyogurt%2Fstrawberry%20yogurt%22%7D%2C%7B%22class%22%3A%22yogurt%22%2C%22score%22%3A0.521%7D%2C%7B%22class%22%3A%22dairy%20product%22%2C%22score%22%3A0.522%7D%5D%2C%22classifier_id%22%3A%22food%22%2C%22name%22%3A%22food%22%7D%5D%2C%22image%22%3A%22657e3500-8884-11e7-a773-cd54b457e82e.png%22%2C%22faces%22%3A%5B%5D%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%2C%22raw%22%3A%7B%7D%7D",
+    "detectFaces": "%7B%22images%22%3A%5B%7B%22faces%22%3A%5B%5D%2C%22image%22%3A%22657e3500-8884-11e7-a773-cd54b457e82e.png%22%7D%5D%2C%22images_processed%22%3A1%7D",
+    "recognizeText": "%7B%22images%22%3A%5B%7B%22image%22%3A%22657e3500-8884-11e7-a773-cd54b457e82e.png%22%2C%22text%22%3A%22%22%2C%22words%22%3A%5B%5D%7D%5D%2C%22images_processed%22%3A1%7D"
+  }
+}
+
