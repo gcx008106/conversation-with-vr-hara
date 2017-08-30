@@ -1,8 +1,8 @@
-# Visual Recognition Demo
+# スマ先生プロト
 [![Build Status](https://travis-ci.org/watson-developer-cloud/visual-recognition-nodejs.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/visual-recognition-nodejs?branch=master)
 [![codecov.io](https://codecov.io/github/watson-developer-cloud/visual-recognition-nodejs/coverage.svg?branch=master)](https://codecov.io/github/watson-developer-cloud/visual-recognition-nodejs?branch=master)
 
-The [Visual Recognition][visual_recognition_service] Service uses deep learning algorithms to analyze images for scenes, objects, faces, text, and other subjects that can give you insights into your visual content. You can organize image libraries, understand an individual image, and create custom classifiers for specific results that are tailored to your needs.
+スマ先生プロトは、Conversation、Visual Recognition][visual_recognition_service], Discoveryをミックスアップして、会話しながら写真を認識(Recognize)、それに基づいてあらかじめ蓄積しておいた文献のコレクションからアップロードに適している度合を発見(Discover)する。The [Visual RecognitionService uses deep learning algorithms to analyze images for scenes, objects, faces, text, and 
 
 Give it a try! Click the button below to fork into IBM DevOps Services and deploy your own copy of this application on Bluemix.
 
