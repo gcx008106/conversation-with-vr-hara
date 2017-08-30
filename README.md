@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/watson-developer-cloud/visual-recognition-nodejs.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/visual-recognition-nodejs?branch=master)
 [![codecov.io](https://codecov.io/github/watson-developer-cloud/visual-recognition-nodejs/coverage.svg?branch=master)](https://codecov.io/github/watson-developer-cloud/visual-recognition-nodejs?branch=master)
 
-スマ先生プロトは、Conversation、Visual Recognition[visual_recognition_service], Discoveryをミックスアップして、会話しながら写真を認識(Recognize)、それに基づいてあらかじめ蓄積しておいた文献のコレクションからアップロードに適している度合を発見(Discover)する。
+スマ先生プロトは、ワトソンのConversation、Visual Recognition, Discoveryをミックスアップして、会話(C)しながら写真を認識(VR)、よいかどうかを発見的に判断(D)する。
 Give it a try! Click the button below to fork into IBM DevOps Services and deploy your own copy of this application on Bluemix.
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/visual-recognition-nodejs)
