@@ -16,6 +16,11 @@
 	<link href="/css/retraining.css" rel="stylesheet">
 	<!--from conversation-->
 	<link rel="stylesheet" href="css/app.css">
+	
+	<script src="js/common.js"></script>
+	<script src="js/api.js"></script>
+	<script src="js/conversation.js"></script>
+	<script src="js/global.js"></script>	
 </head>
 <body>
   <div id="contentParent" class="responsive-columns-wrapper">
@@ -52,7 +57,7 @@
 			<p class="base--p use--error-message error--message">Visual Recognition is not available right now...</p>
 		</div>
 		<div class="use--output display-none">
-			<h2 class="base--h2 use--output-header">Watson sees...</h2>
+			<h2 class="base--h2 use--output-header">スマ先生はこう見ます...</h2>
 			<div class="use--output-row">
 				<div class="use--output-image-container"><img class="use--output-image"></div>
 				<div class="boxes" id="box"></div>
@@ -60,6 +65,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<script data-pace-options="{&quot;ajax&quot;: false}" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js">
@@ -74,9 +80,6 @@
 	</script>
 	<script src="/js/vendors/tealeaf.js">
 	</script>
-	<script src="js/common.js"></script>
-	<script src="js/api.js"></script>
-	<script src="js/conversation.js"></script>
-	<script src="js/global.js"></script>
+
 </body>
 </html>

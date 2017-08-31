@@ -32,8 +32,9 @@ var ConversationPanel = (function() {
   // Set up callbacks on payload setters in Api module
   // This causes the displayMessage function to be called when messages are sent / received
   function chatUpdateSetup() {
+	alert("ConversationPanel.chatUpdateSetup()");
     var currentRequestPayloadSetter = Api.setRequestPayload;//すでにあるApi.setRequestPayloadを取り出しているのは、callback関数の上書きでなく追加するため。Payloadが先に追加してるかもしれないので。
-    Api.setRequestPayload = function(newPayloadStr) {
+    Api.setRequestPayload = function(newPayloadStr) {//publicなので差し替えが効く。
       currentRequestPayloadSetter.call(Api, newPayloadStr);//つまりすでにPayloadで追加されたcallbackを呼び、自分のdisplayMessageを呼ぶ。
       displayMessage(JSON.parse(newPayloadStr), settings.authorTypes.user);
     };
@@ -114,6 +115,7 @@ var ConversationPanel = (function() {
 
   // Display a user or Watson message that has just been sent/received
   function displayMessage(newPayload, typeValue) {
+	alert("Conversation.displayMessage(): newPayload=" + newPayload);
     var isUser = isUserMessage(typeValue);
     var textExists = (newPayload.input && newPayload.input.text)
       || (newPayload.output && newPayload.output.text);
@@ -155,13 +157,17 @@ var ConversationPanel = (function() {
 
   // Constructs new DOM element from a message payload
   function buildMessageDomElements(newPayload, isUser) {
+	//alert("Conversation.buildMessageDomElements() newPayload" + newPayload);
     var textArray = isUser ? newPayload.input.text : newPayload.output.text;
     if (Object.prototype.toString.call( textArray ) !== '[object Array]') {
       textArray = [textArray];
     }
     var messageArray = [];
-
+	
+	
+	//alert("Conversation.buildMessageDomElements() textArray" + textArray);
     textArray.forEach(function(currentText) {
+	  //alert("Conversation.buildMessageDomElements() currentText" + currentText);
       if (currentText) {
         var messageJson = {
           // <div class='segments'>

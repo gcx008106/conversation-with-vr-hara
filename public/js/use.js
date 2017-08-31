@@ -134,7 +134,42 @@ function setupUse(params) {
       }
     }
     // populate table
-	//alert(results);
+	alert(results);
+	alert("showResult1");
+	var messageString = "{\"output\":{\"text\":[\"";
+	var classifier0 = results.images[0].classifiers[0];
+	var classifiers = results.images[0].classifiers;
+	for (var i = 0; i < classifiers.length; i++){
+		var classifier = classifiers[i];
+		//alert(classifier.classifier_id);
+
+		var classes = classifier.classes;
+		for (var j = 0; j < classes.length; j++){
+			var obj = classes[j];
+				alert("[class,score]=[" + obj.class +","+ obj.score+"]");
+				messageString += obj.class + ",";
+		}
+	}
+	var length = messageString.length;
+	var message = new String();
+	message = messageString.substring(0, length-1);
+	message += "なんかが写ってるようだけど。なんか他にも情報あったら教えてもらる？\"]}}";
+	alert("showResult2");
+	/** var textExists = (newPayload.input && newPayload.input.text)
+      || (newPayload.output && newPayload.output.text);
+	  
+	  このようなJSONを作成せねばdisplayMessageでテキストを認識しない。
+	  Api.setResponsePayload():newPayloadStr=
+	  {"intents":[],"entities":[],"input":{},"output":{"text":["こんにちはスマ先生です。"],"nodes_visited":["ようこそ"],"log_messages":[]},"context":{"conversation_id":"f050abcf-5d01-486a-9277-5fc3fd236d04","system":{"dialog_stack":[{"dialog_node":"root"}],"dialog_turn_counter":1,"dialog_request_counter":1,"_node_output_map":{"ようこそ":[0]},"branch_exited":true,"branch_exited_reason":"completed"}}}
+	  **/
+	alert("message is " + message);
+	
+	Api.setResponsePayload(message); 
+	
+	alert("showResult3");
+	
+	
+	
     renderTable(results,null);
     $result.show();
 
@@ -204,24 +239,9 @@ function setupUse(params) {
         .done(function(data) { 
 			showResult(data);
 			
-			var messageString = new String();
-			var classifier0 = data.images[0].classifiers[0];
-			var classifiers = data.images[0].classifiers;
-			for (var i = 0; i < classifiers.length; i++){
-				var classifier = classifiers[i];
-				//alert(classifier.classifier_id);
-
-				var classes = classifier.classes;
-				for (var j = 0; j < classes.length; j++){
-					var obj = classes[j];
-						alert("[class,score]=[" + obj.class +","+ obj.score+"]");
-						messageString += obj.class + ',';
-				}
-			}
-			var length = messageString.length;
-			var message = messageString.substring(0, length-1);
-			alert(message);
-			Api.setResponsePayload(message);
+			//ConversationPanel.displayMessage(message, ConversationPanel.authorTypes.watson)
+			//var fn = Api.getResponsePayload;
+			//fn(message);
 			
 			/**if (results.classifier_ids && results.classifier_ids.split(",").filter(function(item) { return item !== 'default'; }).length > 0) {
 			  customClassifyScoreTable(results, $outputData[0]);
