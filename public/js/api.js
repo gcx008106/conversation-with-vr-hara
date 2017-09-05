@@ -21,9 +21,9 @@ var Api = (function() {
       return responsePayload;
     },
     setResponsePayload: function(newPayloadStr) {
-	  alert("Api.setResponsePayload():newPayloadStr="+newPayloadStr);
+	  //alert("Api.setResponsePayload():newPayloadStr="+newPayloadStr);
       responsePayload = JSON.parse(newPayloadStr);
-	  alert("Api.setResponsePayload():responsePayload="+responsePayload); 
+	  //alert("Api.setResponsePayload():responsePayload="+responsePayload); 
     }
   };
 

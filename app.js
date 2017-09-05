@@ -268,7 +268,7 @@ app.post('/api/classify', app.upload.single('images_file'), function(req, res) {
 	  //console.log("combine.value");
 	  //console.dir(combine.value);
 	  //console.log("stringify(combine.value)");
-	  console.log(JSON.stringify(combine.value));
+	  //console.log(JSON.stringify(combine.value));
 	  
       res.json(combine.value);
     } else {

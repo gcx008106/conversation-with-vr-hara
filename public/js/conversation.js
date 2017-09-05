@@ -32,7 +32,7 @@ var ConversationPanel = (function() {
   // Set up callbacks on payload setters in Api module
   // This causes the displayMessage function to be called when messages are sent / received
   function chatUpdateSetup() {
-	alert("ConversationPanel.chatUpdateSetup()");
+	//alert("ConversationPanel.chatUpdateSetup()");
     var currentRequestPayloadSetter = Api.setRequestPayload;//すでにあるApi.setRequestPayloadを取り出しているのは、callback関数の上書きでなく追加するため。Payloadが先に追加してるかもしれないので。
     Api.setRequestPayload = function(newPayloadStr) {//publicなので差し替えが効く。
       currentRequestPayloadSetter.call(Api, newPayloadStr);//つまりすでにPayloadで追加されたcallbackを呼び、自分のdisplayMessageを呼ぶ。
@@ -115,7 +115,7 @@ var ConversationPanel = (function() {
 
   // Display a user or Watson message that has just been sent/received
   function displayMessage(newPayload, typeValue) {
-	alert("Conversation.displayMessage(): newPayload=" + newPayload);
+	//alert("Conversation.displayMessage(): newPayload=" + newPayload);
     var isUser = isUserMessage(typeValue);
     var textExists = (newPayload.input && newPayload.input.text)
       || (newPayload.output && newPayload.output.text);

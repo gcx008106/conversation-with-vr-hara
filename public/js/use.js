@@ -134,27 +134,29 @@ function setupUse(params) {
       }
     }
     // populate table
-	alert(results);
-	alert("showResult1");
 	var messageString = "{\"output\":{\"text\":[\"";
 	var classifier0 = results.images[0].classifiers[0];
 	var classifiers = results.images[0].classifiers;
+	var total_class = 0;
 	for (var i = 0; i < classifiers.length; i++){
 		var classifier = classifiers[i];
-		//alert(classifier.classifier_id);
-
 		var classes = classifier.classes;
-		for (var j = 0; j < classes.length; j++){
+		for (var j = 0; j < classes.length ; j++){
 			var obj = classes[j];
-				alert("[class,score]=[" + obj.class +","+ obj.score+"]");
-				messageString += obj.class + ",";
-		}
-	}
-	var length = messageString.length;
-	var message = new String();
-	message = messageString.substring(0, length-1);
-	message += "なんかが写ってるようだけど。なんか他にも情報あったら教えてもらる？\"]}}";
-	alert("showResult2");
+			if( obj ){
+				//alert("[class,score]=[" + obj.class +","+ obj.score+"]");
+				if( obj.class != "non-food" && total_class <= 5 ){
+					messageString += obj.class + ",";
+					total_class++;
+				}
+			}
+		}			
+	}	
+
+	var message = messageString.replace(/(^,)|(,$)/g, "");
+	message += "なんかが写ってるね。これをもとにちょっとディスカバってみます。\"]}}";
+	
+	
 	/** var textExists = (newPayload.input && newPayload.input.text)
       || (newPayload.output && newPayload.output.text);
 	  
@@ -164,13 +166,10 @@ function setupUse(params) {
 	  **/
 	alert("message is " + message);
 	
+	//会話パネルへの表示
 	Api.setResponsePayload(message); 
 	
-	alert("showResult3");
-	
-	
-	
-    renderTable(results,null);
+    //renderTable(results,null);
     $result.show();
 
 	
@@ -187,11 +186,11 @@ function setupUse(params) {
     });
 
     // check if there are results or not
-    if ($outputData.html() === '') {
+    /**if ($outputData.html() === '') {
       $outputData.after(
           $('<div class="' + panel + '--mismatch" />')
               .html('No matching classifiers found.'));
-    }
+    }**/
 
     var outputImage = document.querySelector('.use--output-image');
     if (outputImage && (outputImage.height >= outputImage.width)) {
