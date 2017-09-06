@@ -56,6 +56,31 @@ var conversation = new Conversation({
   version_date: Conversation.VERSION_DATE_2017_04_21
 });
 
+
+/// Discovery 
+const queryBuilder = require('./query-builder');
+
+//const NEWS_ENVIRONMENT_ID = 'system';
+//const NEWS_COLLECTION_ID = 'news';
+
+//Discovery-Demo-hara:SmaProto
+const ENVIRONMENT_ID = 'b9c6ac08-1e20-4129-83d9-9c4e14116fb2';
+const COLLECTION_ID = 'a0c4668a-954b-4a44-a480-b89ed93b6a70';
+
+const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
+const discovery = new DiscoveryV1({
+  // If unspecified here, the DISCOVERY_USERNAME and
+  // DISCOVERY_PASSWORD env properties will be checked
+  // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
+  username: '630e6f15-ab51-46cb-be96-86b1676be38b',
+  password: 'zRaiH4aoOORw',
+
+  version_date: '2017-08-01',
+  qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
+}); 
+
+
+
 app.get('/', function(req, res) {
   res.render('use', {
     bluemixAnalytics: process.env.BLUEMIX_ANALYTICS
@@ -276,5 +301,36 @@ app.post('/api/classify', app.upload.single('images_file'), function(req, res) {
     }
   });
 });
+
+// setup query endpoint for news
+app.post('/api/query', (req, res, next) => {
+  //console.log("/api/query1");
+  /*const params = Object.assign({}, queryBuilder.build(req.body), {
+    environment_id: NEWS_ENVIRONMENT_ID,
+    collection_id: NEWS_COLLECTION_ID
+  });*/
+
+  const params = Object.assign({}, queryBuilder.build(req.body), {
+    environment_id: ENVIRONMENT_ID,
+    collection_id: COLLECTION_ID
+  });
+  
+  console.log(JSON.stringify(params));
+  
+  //console.log("/api/query2");
+  discovery.query(params, (error, response) => {
+	//console.log("/api/query3");  
+    if (error) {
+	  //console.log("/api/query4 error");  
+      next(error);
+    } else {
+	  console.log("/api/query5 response="+JSON.stringify(response));  
+      res.json(response);
+    }
+  });
+});
+
+// error-handler settings for all other routes
+require('./config/error-handler')(app);
 
 module.exports = app;

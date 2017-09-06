@@ -1,0 +1,65 @@
+{"matching_results":0,"aggregations":[{"type":"nested","path":"enriched_title.entities","matching_results":0},{"type":"nested","path":"enriched_title.entities","matching_results":0},{"type":"term","field":"enriched_title.concepts.text","results":[]},{"type":"term","field":"host","results":[]},{"type":"term","field":"enriched_text.sentiment.document.label","results":[]},{"type":"min","field":"enriched_text.sentiment.document.score","value":null},{"type":"max","field":"enriched_text.sentiment.document.score","value":null},{"type":"filter","match":"enriched_title.entities.type::Company","matching_results":0,"aggregations":[{"type":"term","field":"enriched_title.entities.text","results":[]}]}],"results":[]}
+
+{
+  "matching_results": 0,
+  "aggregations": [
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 0
+    },
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 0
+    },
+    {
+      "type": "term",
+      "field": "enriched_title.concepts.text",
+      "results": [
+        
+      ]
+    },
+    {
+      "type": "term",
+      "field": "host",
+      "results": [
+        
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_text.sentiment.document.label",
+      "results": [
+        
+      ]
+    },
+    {
+      "type": "min",
+      "field": "enriched_text.sentiment.document.score",
+      "value": null
+    },
+    {
+      "type": "max",
+      "field": "enriched_text.sentiment.document.score",
+      "value": null
+    },
+    {
+      "type": "filter",
+      "match": "enriched_title.entities.type::Company",
+      "matching_results": 0,
+      "aggregations": [
+        {
+          "type": "term",
+          "field": "enriched_title.entities.text",
+          "results": [
+            
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    
+  ]
+}

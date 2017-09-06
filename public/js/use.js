@@ -138,6 +138,7 @@ function setupUse(params) {
 	var classifier0 = results.images[0].classifiers[0];
 	var classifiers = results.images[0].classifiers;
 	var total_class = 0;
+	var first_class;
 	for (var i = 0; i < classifiers.length; i++){
 		var classifier = classifiers[i];
 		var classes = classifier.classes;
@@ -147,6 +148,9 @@ function setupUse(params) {
 				//alert("[class,score]=[" + obj.class +","+ obj.score+"]");
 				if( obj.class != "non-food" && total_class <= 5 ){
 					messageString += obj.class + ",";
+					if(total_class==0){
+						first_class = obj.class;
+					}
 					total_class++;
 				}
 			}
@@ -155,6 +159,42 @@ function setupUse(params) {
 
 	var message = messageString.replace(/(^,)|(,$)/g, "");
 	message += "なんかが写ってるね。これをもとにちょっとディスカバってみます。\"]}}";
+
+	//会話パネルへの表示
+	Api.setResponsePayload(message); 
+	
+	//query={"text":"apple","date":{"from":"20170705","to":"20170905"}
+	/*
+	var query = {
+		text : first_class,
+		date : {from : "20170705", to : "20170905" }
+	};
+	*/
+	var query = {
+		text : first_class
+	};
+	alert("use.showResult():query=" + JSON.stringify(query));
+	fetch('/api/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(query),
+    })
+    .then((response) => {
+      if (response.ok) {
+        response.json()
+          .then((json) => {
+			alert("use.showResults(): response.json()="+JSON.stringify(json));
+			console.log(json);
+          });
+      } else {
+        response.json()
+        .then(error)
+        .catch((errorMessage) => {
+          console.error(errorMessage);
+        });
+      }
+    });
+    
 	
 	
 	/** var textExists = (newPayload.input && newPayload.input.text)
@@ -164,10 +204,9 @@ function setupUse(params) {
 	  Api.setResponsePayload():newPayloadStr=
 	  {"intents":[],"entities":[],"input":{},"output":{"text":["こんにちはスマ先生です。"],"nodes_visited":["ようこそ"],"log_messages":[]},"context":{"conversation_id":"f050abcf-5d01-486a-9277-5fc3fd236d04","system":{"dialog_stack":[{"dialog_node":"root"}],"dialog_turn_counter":1,"dialog_request_counter":1,"_node_output_map":{"ようこそ":[0]},"branch_exited":true,"branch_exited_reason":"completed"}}}
 	  **/
-	alert("message is " + message);
+	//alert("message is " + message);
 	
-	//会話パネルへの表示
-	Api.setResponsePayload(message); 
+
 	
     //renderTable(results,null);
     $result.show();

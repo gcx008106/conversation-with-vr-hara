@@ -1,0 +1,692 @@
+Retrieving logs for app [36;1mconversation-with-vr-hara[0m in org [36;1mWB - JFE Systems[0m / space [36;1mDEV[0m as [36;1mhara@jfe-systems.com[0m...
+
+   2017-09-05T18:07:43.34+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T18:07:46.25+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T18:07:46.27+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T18:07:46.28+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T18:07:46.28+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T18:07:46.30+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   2017-09-05T18:07:46.48+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T18:08:22.74+0900 [API/1] OUT Process has crashed with type: "web"
+   [31m2017-09-05T18:08:42.91+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T18:08:42.91+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T18:08:42.91+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T18:08:42.96+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T18:08:42.96+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   2017-09-05T18:08:43.23+0900 [API/1] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"27638823-663e-4a00-7941-391c", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* 1 error(s) occurred:\n\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1504602523173289116, "version"=>"6523e9e9-7f24-4eab-bdef-c11800a7c442"}
+   2017-09-05T18:11:56.65+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   [31m2017-09-05T18:12:00.45+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T18:12:00.45+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T18:12:00.45+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T18:12:00.46+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T18:12:00.46+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   2017-09-05T18:12:01.02+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T18:19:43.76+0900 [CELL/0] OUT Successfully created container
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T18:20:01.04+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T18:20:01.07+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T18:20:01.07+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T18:20:01.10+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T18:20:01.10+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   2017-09-05T18:28:39.85+0900 [API/5] OUT Process has crashed with type: "web"
+   2017-09-05T18:44:52.45+0900 [CELL/0] OUT Creating container
+   2017-09-05T18:44:56.07+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T18:45:07.89+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T18:45:07.89+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T18:45:10.48+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T18:45:10.48+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T18:45:10.48+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T18:45:10.48+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T18:45:10.52+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T18:45:10.52+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T18:45:10.58+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T18:45:10.58+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T09_45_10_530Z-debug.log[0m
+   2017-09-05T18:45:10.80+0900 [API/10] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"5dfc1042-ab8b-48f4-543d-98bb", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>9, "crash_timestamp"=>1504604710722269108, "version"=>"6523e9e9-7f24-4eab-bdef-c11800a7c442"}
+   2017-09-05T19:01:37.62+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:01:41.42+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:01:57.71+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:01:59.55+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:01:59.55+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:02:02.90+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:02:02.94+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_02_02_924Z-debug.log[0m
+   2017-09-05T19:02:02.97+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:02:03.26+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:02:03.28+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:02:03.30+0900 [API/1] OUT Process has crashed with type: "web"
+   2017-09-05T19:02:03.32+0900 [API/1] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"116a9ecb-b4ac-41f0-62f4-fe71", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>10, "crash_timestamp"=>1504605723274544107, "version"=>"6523e9e9-7f24-4eab-bdef-c11800a7c442"}
+   2017-09-05T19:02:05.95+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:18:22.90+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:18:25.93+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:18:40.73+0900 [CELL/0] OUT Starting health monitoring of container
+   [31m2017-09-05T19:18:41.08+0900 [CELL/0] ERR runtime: failed to create new OS thread (have 5 already; errno=11)[0m
+   [31m2017-09-05T19:18:41.08+0900 [CELL/0] ERR runtime: may need to increase max user processes (ulimit -u)[0m
+   [31m2017-09-05T19:18:41.08+0900 [CELL/0] ERR fatal error: newosproc[0m
+   2017-09-05T19:18:43.09+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:18:43.09+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:18:47.90+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:18:48.05+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_18_48_003Z-debug.log[0m
+   2017-09-05T19:18:48.06+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:18:48.22+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:18:48.23+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:18:48.26+0900 [API/0] OUT Process has crashed with type: "web"
+   2017-09-05T19:18:48.34+0900 [API/0] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"bd685964-3432-4d32-79dd-f984", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>11, "crash_timestamp"=>1504606728229427795, "version"=>"6523e9e9-7f24-4eab-bdef-c11800a7c442"}
+   2017-09-05T19:18:51.24+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:34:58.62+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:35:02.83+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:35:13.68+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:35:15.65+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:35:15.65+0900 [APP/PROC/WEB/0] OUT > node server.js
+   2017-09-05T19:35:16.98+0900 [API/8] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"name"=>"conversation-with-vr-hara", "command"=>"PRIVATE DATA HIDDEN", "memory"=>512, "environment_json"=>"PRIVATE DATA HIDDEN"})
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:35:19.29+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:35:19.35+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:35:19.40+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:35:19.40+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_35_19_335Z-debug.log[0m
+   2017-09-05T19:35:19.43+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:35:19.50+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:35:19.52+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:35:19.56+0900 [API/5] OUT Process has crashed with type: "web"
+   2017-09-05T19:35:19.58+0900 [API/5] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"b9f41995-a4ed-4a55-7946-9bd7", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>12, "crash_timestamp"=>1504607719522853483, "version"=>"6523e9e9-7f24-4eab-bdef-c11800a7c442"}
+   2017-09-05T19:35:22.04+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:35:39.48+0900 [API/5] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"state"=>"STOPPED"})
+   2017-09-05T19:35:43.95+0900 [API/0] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"state"=>"STARTED"})
+   2017-09-05T19:35:52.22+0900 [STG/0] OUT Downloading liberty-for-java_v3_11-20170710-0312...
+   2017-09-05T19:35:52.22+0900 [STG/0] OUT Downloading swift_buildpack_v2_0_6-20170504-0403...
+   2017-09-05T19:35:52.22+0900 [STG/0] OUT Downloading dotnet-core_v1_0_20-20170620-1449...
+   2017-09-05T19:35:52.22+0900 [STG/0] OUT Downloading xpages_buildpack...
+   2017-09-05T19:35:52.22+0900 [STG/0] OUT Downloading sdk-for-nodejs_v3_12-20170505-0656...
+   2017-09-05T19:35:52.24+0900 [STG/0] OUT Downloaded liberty-for-java_v3_11-20170710-0312
+   2017-09-05T19:35:52.24+0900 [STG/0] OUT Downloading php_buildpack...
+   2017-09-05T19:35:52.24+0900 [STG/0] OUT Downloaded swift_buildpack_v2_0_6-20170504-0403
+   2017-09-05T19:35:52.24+0900 [STG/0] OUT Downloading staticfile_buildpack...
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloaded xpages_buildpack
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloading binary_buildpack...
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloaded dotnet-core_v1_0_20-20170620-1449
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloading noop-buildpack...
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloaded sdk-for-nodejs_v3_12-20170505-0656
+   2017-09-05T19:35:52.25+0900 [STG/0] OUT Downloading ruby_buildpack...
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloaded staticfile_buildpack
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloading liberty-for-java...
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloaded php_buildpack
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloading java_buildpack...
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloaded binary_buildpack
+   2017-09-05T19:35:52.27+0900 [STG/0] OUT Downloading sdk-for-nodejs...
+   2017-09-05T19:35:52.28+0900 [STG/0] OUT Downloaded noop-buildpack
+   2017-09-05T19:35:52.28+0900 [STG/0] OUT Downloading dotnet-core...
+   2017-09-05T19:35:52.28+0900 [STG/0] OUT Downloaded ruby_buildpack
+   2017-09-05T19:35:52.28+0900 [STG/0] OUT Downloading swift_buildpack...
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloaded liberty-for-java
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloaded java_buildpack
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloading go_buildpack...
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloading nodejs_buildpack...
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloaded sdk-for-nodejs
+   2017-09-05T19:35:52.30+0900 [STG/0] OUT Downloading python_buildpack...
+   2017-09-05T19:35:52.31+0900 [STG/0] OUT Downloaded dotnet-core
+   2017-09-05T19:35:52.31+0900 [STG/0] OUT Downloaded swift_buildpack
+   2017-09-05T19:35:52.33+0900 [STG/0] OUT Downloaded python_buildpack
+   2017-09-05T19:35:52.33+0900 [STG/0] OUT Downloaded nodejs_buildpack
+   2017-09-05T19:35:52.33+0900 [STG/0] OUT Downloaded go_buildpack
+   2017-09-05T19:35:52.33+0900 [STG/0] OUT Creating container
+   2017-09-05T19:36:00.39+0900 [STG/0] OUT Successfully created container
+   2017-09-05T19:36:00.39+0900 [STG/0] OUT Downloading app package...
+   2017-09-05T19:36:02.76+0900 [STG/0] OUT Downloaded app package (1.7M)
+   2017-09-05T19:36:02.76+0900 [STG/0] OUT Downloading build artifacts cache...
+   2017-09-05T19:36:09.96+0900 [STG/0] OUT Downloaded build artifacts cache (18M)
+   2017-09-05T19:36:09.96+0900 [STG/0] OUT Staging...
+   2017-09-05T19:36:12.54+0900 [STG/0] OUT -----> IBM SDK for Node.js Buildpack v3.13-20170725-1347
+   2017-09-05T19:36:12.54+0900 [STG/0] OUT        Based on Cloud Foundry Node.js Buildpack v1.5.24
+   2017-09-05T19:36:12.56+0900 [STG/0] OUT -----> Creating runtime environment
+   2017-09-05T19:36:12.59+0900 [STG/0] OUT        
+   2017-09-05T19:36:12.59+0900 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2017-09-05T19:36:12.59+0900 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2017-09-05T19:36:12.59+0900 [STG/0] OUT        NODE_ENV=production
+   2017-09-05T19:36:12.59+0900 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2017-09-05T19:36:12.60+0900 [STG/0] OUT -----> Installing binaries
+   2017-09-05T19:36:12.67+0900 [STG/0] OUT        engines.node (package.json):  >=4.x
+   2017-09-05T19:36:12.67+0900 [STG/0] OUT        engines.npm (package.json):   >=3.x
+   2017-09-05T19:36:12.67+0900 [STG/0] OUT        
+   2017-09-05T19:36:12.67+0900 [STG/0] OUT        Resolving node version >=4.x via 'node-version-resolver'
+   2017-09-05T19:36:13.29+0900 [STG/0] OUT        Installing IBM SDK for Node.js (6.11.1) from cache
+   2017-09-05T19:36:16.44+0900 [STG/0] OUT        Resolving npm version >=3.x via semver.io...
+   2017-09-05T19:36:17.71+0900 [STG/0] OUT        Downloading and installing npm 5.4.0 (replacing version 3.10.10)...
+   2017-09-05T19:37:08.59+0900 [STG/0] OUT -----> Restoring cache
+   2017-09-05T19:37:09.37+0900 [STG/0] OUT        Loading 2 from cacheDirectories (default):
+   2017-09-05T19:37:09.37+0900 [STG/0] OUT        - node_modules
+   2017-09-05T19:37:09.37+0900 [STG/0] OUT        - bower_components (not cached - skipping)
+   2017-09-05T19:37:09.42+0900 [STG/0] OUT -----> Checking and configuring service extensions before installing dependencies
+   2017-09-05T19:37:09.72+0900 [STG/0] OUT -----> Building dependencies
+   2017-09-05T19:37:09.72+0900 [STG/0] OUT        Installing node modules (package.json)
+   2017-09-05T19:37:31.34+0900 [STG/0] OUT        added 114 packages in 20.319s
+   2017-09-05T19:37:31.36+0900 [STG/0] OUT -----> Checking and configuring service extensions after installing dependencies
+   2017-09-05T19:37:31.72+0900 [STG/0] OUT -----> Installing App Management
+   2017-09-05T19:37:41.96+0900 [STG/0] OUT -----> Caching build
+   2017-09-05T19:37:41.99+0900 [STG/0] OUT        Clearing previous node cache
+   2017-09-05T19:37:41.99+0900 [STG/0] OUT        Saving 2 cacheDirectories (default):
+   2017-09-05T19:37:41.99+0900 [STG/0] OUT        - node_modules
+   2017-09-05T19:37:55.77+0900 [STG/0] OUT        - bower_components (nothing to cache)
+   2017-09-05T19:37:56.24+0900 [STG/0] OUT -----> Build succeeded!
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── async@2.5.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── babel-cli@6.26.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── babel-preset-es2015@6.24.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── babel-preset-react@6.24.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── babelify@7.3.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── body-parser@1.17.2
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── cf-deployment-tracker-client@0.1.3
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── compression@1.7.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── cookie-parser@1.4.3
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── csurf@1.9.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── dotenv@4.0.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── express@4.15.4
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── express-browserify@1.0.2
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── express-rate-limit@2.9.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── express-status-monitor@0.1.9
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── extend@3.0.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── helmet@3.8.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── jade@1.11.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── jpath-query@0.1.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── jquery-ui@1.12.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── morgan@1.8.2
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── multer@1.3.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── react@15.6.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── react-dom@15.6.1
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── uglifyify@3.0.4
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        ├── uuid@3.1.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        └── watson-developer-cloud@2.39.0
+   2017-09-05T19:38:01.70+0900 [STG/0] OUT        
+   2017-09-05T19:38:36.15+0900 [STG/0] OUT Exit status 0
+   2017-09-05T19:38:36.15+0900 [STG/0] OUT Staging complete
+   2017-09-05T19:38:36.15+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2017-09-05T19:38:36.15+0900 [STG/0] OUT Uploading build artifacts cache...
+   2017-09-05T19:38:36.15+0900 [STG/0] OUT Uploading droplet...
+   2017-09-05T19:38:36.89+0900 [STG/0] OUT Uploaded build artifacts cache (18M)
+   2017-09-05T19:38:42.34+0900 [STG/0] OUT Uploaded droplet (40.6M)
+   2017-09-05T19:38:42.35+0900 [STG/0] OUT Uploading complete
+   2017-09-05T19:38:42.63+0900 [STG/0] OUT Destroying container
+   2017-09-05T19:38:45.30+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:38:45.81+0900 [STG/0] OUT Successfully destroyed container
+   2017-09-05T19:38:49.88+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:39:07.18+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:39:08.72+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:39:08.72+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:39:12.45+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:39:12.48+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:39:12.48+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:39:12.49+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:39:12.49+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:39:12.49+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:39:12.49+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:39:12.49+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:39:12.50+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:39:12.50+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_39_12_492Z-debug.log[0m
+   2017-09-05T19:39:12.50+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:39:12.59+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:39:12.69+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:39:12.73+0900 [API/2] OUT Process has crashed with type: "web"
+   2017-09-05T19:39:12.75+0900 [API/2] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"12b0884c-524e-4b99-4a91-1163", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>1, "crash_timestamp"=>1504607952619459927, "version"=>"e1ad0acb-3a03-445d-aa39-51c675c389c4"}
+   2017-09-05T19:39:15.68+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:39:17.19+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:39:20.76+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:39:34.98+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:39:38.01+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:39:38.01+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:39:42.07+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:39:42.13+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:39:42.14+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:39:42.23+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:39:42.23+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_39_42_154Z-debug.log[0m
+   2017-09-05T19:39:42.27+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:39:42.40+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:39:42.45+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:39:42.48+0900 [API/10] OUT Process has crashed with type: "web"
+   2017-09-05T19:39:42.50+0900 [API/10] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"0be8f31e-5c4b-4855-7a21-8c8c", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>2, "crash_timestamp"=>1504607982410535111, "version"=>"e1ad0acb-3a03-445d-aa39-51c675c389c4"}
+   2017-09-05T19:39:44.93+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:39:49.99+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:39:53.12+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:40:12.81+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:40:14.49+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:40:14.49+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:40:17.10+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:40:17.18+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:40:17.22+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:40:17.22+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_40_17_130Z-debug.log[0m
+   2017-09-05T19:40:17.25+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:40:17.40+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:40:17.41+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:40:17.44+0900 [API/1] OUT Process has crashed with type: "web"
+   2017-09-05T19:40:17.46+0900 [API/1] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"8ca440f0-e8b3-4a70-7247-7339", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* 1 error(s) occurred:\n\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1504608017412680854, "version"=>"e1ad0acb-3a03-445d-aa39-51c675c389c4"}
+   2017-09-05T19:40:19.91+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:41:16.77+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:41:19.42+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:41:32.34+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:41:34.36+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:41:34.36+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:41:37.20+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:41:37.21+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:41:37.21+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:41:37.22+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:41:37.22+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:41:37.22+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:41:37.22+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:41:37.22+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:41:37.24+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:41:37.24+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_41_37_222Z-debug.log[0m
+   2017-09-05T19:41:37.30+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:41:37.41+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:41:37.44+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:41:37.49+0900 [API/9] OUT Process has crashed with type: "web"
+   2017-09-05T19:41:37.53+0900 [API/9] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"ee643f2c-bb12-4402-76b9-c860", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>4, "crash_timestamp"=>1504608097431550143, "version"=>"e1ad0acb-3a03-445d-aa39-51c675c389c4"}
+   2017-09-05T19:41:39.69+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:42:05.49+0900 [API/5] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"name"=>"conversation-with-vr-hara", "command"=>"PRIVATE DATA HIDDEN", "memory"=>512, "environment_json"=>"PRIVATE DATA HIDDEN"})
+   2017-09-05T19:42:27.85+0900 [API/0] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"state"=>"STOPPED"})
+   2017-09-05T19:42:32.45+0900 [API/2] OUT Updated app with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 ({"state"=>"STARTED"})
+   2017-09-05T19:42:32.97+0900 [STG/0] OUT Downloading liberty-for-java_v3_11-20170710-0312...
+   2017-09-05T19:42:32.97+0900 [STG/0] OUT Downloading swift_buildpack...
+   2017-09-05T19:42:32.97+0900 [STG/0] OUT Downloading go_buildpack...
+   2017-09-05T19:42:32.97+0900 [STG/0] OUT Downloading liberty-for-java...
+   2017-09-05T19:42:32.98+0900 [STG/0] OUT Downloading java_buildpack...
+   2017-09-05T19:42:32.99+0900 [STG/0] OUT Downloaded swift_buildpack
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloading noop-buildpack...
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloaded liberty-for-java_v3_11-20170710-0312
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloaded liberty-for-java
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloading binary_buildpack...
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloaded go_buildpack
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloading sdk-for-nodejs...
+   2017-09-05T19:42:33.00+0900 [STG/0] OUT Downloading python_buildpack...
+   2017-09-05T19:42:33.01+0900 [STG/0] OUT Downloaded java_buildpack
+   2017-09-05T19:42:33.01+0900 [STG/0] OUT Downloading xpages_buildpack...
+   2017-09-05T19:42:33.02+0900 [STG/0] OUT Downloaded noop-buildpack
+   2017-09-05T19:42:33.02+0900 [STG/0] OUT Downloading php_buildpack...
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloaded binary_buildpack
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloading staticfile_buildpack...
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloaded sdk-for-nodejs
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloading dotnet-core_v1_0_20-20170620-1449...
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloaded xpages_buildpack
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloading swift_buildpack_v2_0_6-20170504-0403...
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloaded python_buildpack
+   2017-09-05T19:42:33.03+0900 [STG/0] OUT Downloading sdk-for-nodejs_v3_12-20170505-0656...
+   2017-09-05T19:42:33.05+0900 [STG/0] OUT Downloaded php_buildpack
+   2017-09-05T19:42:33.05+0900 [STG/0] OUT Downloading ruby_buildpack...
+   2017-09-05T19:42:33.05+0900 [STG/0] OUT Downloaded staticfile_buildpack
+   2017-09-05T19:42:33.05+0900 [STG/0] OUT Downloading dotnet-core...
+   2017-09-05T19:42:33.06+0900 [STG/0] OUT Downloaded dotnet-core_v1_0_20-20170620-1449
+   2017-09-05T19:42:33.06+0900 [STG/0] OUT Downloading nodejs_buildpack...
+   2017-09-05T19:42:33.06+0900 [STG/0] OUT Downloaded swift_buildpack_v2_0_6-20170504-0403
+   2017-09-05T19:42:33.06+0900 [STG/0] OUT Downloaded sdk-for-nodejs_v3_12-20170505-0656
+   2017-09-05T19:42:33.08+0900 [STG/0] OUT Downloaded ruby_buildpack
+   2017-09-05T19:42:33.08+0900 [STG/0] OUT Downloaded dotnet-core
+   2017-09-05T19:42:33.09+0900 [STG/0] OUT Downloaded nodejs_buildpack
+   2017-09-05T19:42:33.09+0900 [STG/0] OUT Creating container
+   2017-09-05T19:42:37.03+0900 [STG/0] OUT Successfully created container
+   2017-09-05T19:42:37.04+0900 [STG/0] OUT Downloading app package...
+   2017-09-05T19:42:38.24+0900 [STG/0] OUT Downloaded app package (1.7M)
+   2017-09-05T19:42:38.24+0900 [STG/0] OUT Downloading build artifacts cache...
+   2017-09-05T19:42:44.85+0900 [STG/0] OUT Downloaded build artifacts cache (18M)
+   2017-09-05T19:42:44.85+0900 [STG/0] OUT Staging...
+   2017-09-05T19:42:46.91+0900 [STG/0] OUT -----> IBM SDK for Node.js Buildpack v3.13-20170725-1347
+   2017-09-05T19:42:46.92+0900 [STG/0] OUT        Based on Cloud Foundry Node.js Buildpack v1.5.24
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT -----> Creating runtime environment
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT        
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT        NODE_ENV=production
+   2017-09-05T19:42:46.95+0900 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2017-09-05T19:42:46.96+0900 [STG/0] OUT -----> Installing binaries
+   2017-09-05T19:42:46.99+0900 [STG/0] OUT        engines.node (package.json):  >=4.x
+   2017-09-05T19:42:46.99+0900 [STG/0] OUT        engines.npm (package.json):   >=3.x
+   2017-09-05T19:42:46.99+0900 [STG/0] OUT        
+   2017-09-05T19:42:46.99+0900 [STG/0] OUT        Resolving node version >=4.x via 'node-version-resolver'
+   2017-09-05T19:42:47.24+0900 [STG/0] OUT        Installing IBM SDK for Node.js (6.11.1) from cache
+   2017-09-05T19:42:49.42+0900 [STG/0] OUT        Resolving npm version >=3.x via semver.io...
+   2017-09-05T19:42:50.84+0900 [STG/0] OUT        Downloading and installing npm 5.4.0 (replacing version 3.10.10)...
+   2017-09-05T19:43:30.41+0900 [STG/0] OUT -----> Restoring cache
+   2017-09-05T19:43:31.09+0900 [STG/0] OUT        Loading 2 from cacheDirectories (default):
+   2017-09-05T19:43:31.09+0900 [STG/0] OUT        - node_modules
+   2017-09-05T19:43:31.09+0900 [STG/0] OUT        - bower_components (not cached - skipping)
+   2017-09-05T19:43:31.09+0900 [STG/0] OUT -----> Checking and configuring service extensions before installing dependencies
+   2017-09-05T19:43:31.41+0900 [STG/0] OUT -----> Building dependencies
+   2017-09-05T19:43:31.45+0900 [STG/0] OUT        Installing node modules (package.json)
+   2017-09-05T19:43:50.73+0900 [STG/0] OUT        added 114 packages in 17.959s
+   2017-09-05T19:43:50.78+0900 [STG/0] OUT -----> Checking and configuring service extensions after installing dependencies
+   2017-09-05T19:43:51.03+0900 [STG/0] OUT -----> Installing App Management
+   2017-09-05T19:44:00.68+0900 [STG/0] OUT -----> Caching build
+   2017-09-05T19:44:00.69+0900 [STG/0] OUT        Clearing previous node cache
+   2017-09-05T19:44:00.69+0900 [STG/0] OUT        Saving 2 cacheDirectories (default):
+   2017-09-05T19:44:00.69+0900 [STG/0] OUT        - node_modules
+   2017-09-05T19:44:12.52+0900 [STG/0] OUT        - bower_components (nothing to cache)
+   2017-09-05T19:44:13.09+0900 [STG/0] OUT -----> Build succeeded!
+   2017-09-05T19:44:18.77+0900 [STG/0] OUT        ├── async@2.5.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── babel-cli@6.26.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── babel-preset-es2015@6.24.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── babel-preset-react@6.24.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── babelify@7.3.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── body-parser@1.17.2
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── cf-deployment-tracker-client@0.1.3
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── compression@1.7.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── cookie-parser@1.4.3
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── csurf@1.9.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── dotenv@4.0.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── express@4.15.4
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── express-browserify@1.0.2
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── express-rate-limit@2.9.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── express-status-monitor@0.1.9
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── extend@3.0.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── helmet@3.8.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── jade@1.11.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── jpath-query@0.1.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── jquery-ui@1.12.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── morgan@1.8.2
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── multer@1.3.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── react@15.6.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── react-dom@15.6.1
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── uglifyify@3.0.4
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        ├── uuid@3.1.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        └── watson-developer-cloud@2.39.0
+   2017-09-05T19:44:18.78+0900 [STG/0] OUT        
+   2017-09-05T19:44:51.02+0900 [STG/0] OUT Exit status 0
+   2017-09-05T19:44:51.02+0900 [STG/0] OUT Staging complete
+   2017-09-05T19:44:51.02+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2017-09-05T19:44:51.02+0900 [STG/0] OUT Uploading build artifacts cache...
+   2017-09-05T19:44:51.02+0900 [STG/0] OUT Uploading droplet...
+   2017-09-05T19:44:51.90+0900 [STG/0] OUT Uploaded build artifacts cache (17.9M)
+   2017-09-05T19:44:54.75+0900 [STG/0] OUT Uploaded droplet (40.6M)
+   2017-09-05T19:44:54.76+0900 [STG/0] OUT Uploading complete
+   2017-09-05T19:44:54.94+0900 [STG/0] OUT Destroying container
+   2017-09-05T19:44:58.40+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:44:58.67+0900 [STG/0] OUT Successfully destroyed container
+   2017-09-05T19:45:02.29+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:45:12.11+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:45:14.24+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:45:14.24+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:45:21.23+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:45:21.29+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:45:21.30+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:45:21.40+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:45:21.40+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_45_21_301Z-debug.log[0m
+   2017-09-05T19:45:21.41+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:45:21.57+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:45:21.86+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:45:21.90+0900 [API/0] OUT Process has crashed with type: "web"
+   2017-09-05T19:45:21.92+0900 [API/0] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"d126657d-c847-402c-744c-d7a2", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>1, "crash_timestamp"=>1504608321588305156, "version"=>"dabef2a4-85aa-4534-80e7-0bf7178fca75"}
+   2017-09-05T19:45:24.82+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:45:31.66+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:45:35.11+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:45:42.87+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:45:44.26+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:45:44.26+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:45:47.04+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:45:47.05+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:45:47.05+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:45:47.06+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:45:47.06+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:45:47.06+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:45:47.06+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:45:47.06+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:45:47.07+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:45:47.07+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_45_47_062Z-debug.log[0m
+   2017-09-05T19:45:47.11+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:45:47.18+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:45:47.23+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:45:47.25+0900 [API/2] OUT Process has crashed with type: "web"
+   2017-09-05T19:45:47.27+0900 [API/2] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"6f6f1480-5d79-4426-4bff-7255", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>2, "crash_timestamp"=>1504608347191788478, "version"=>"dabef2a4-85aa-4534-80e7-0bf7178fca75"}
+   2017-09-05T19:45:49.95+0900 [CELL/0] OUT Successfully destroyed container
+   2017-09-05T19:45:54.44+0900 [CELL/0] OUT Creating container
+   2017-09-05T19:45:57.79+0900 [CELL/0] OUT Successfully created container
+   2017-09-05T19:46:04.41+0900 [CELL/0] OUT Starting health monitoring of container
+   2017-09-05T19:46:05.69+0900 [APP/PROC/WEB/0] OUT > conv-vr-discovery@3.0.0 start /home/vcap/app
+   2017-09-05T19:46:05.69+0900 [APP/PROC/WEB/0] OUT > node server.js
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR module.js:471[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     throw err;[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     ^[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR Error: Cannot find module 'moment'[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Function.Module._resolveFilename (module.js:469:15)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:417:25)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/query-builder.js:4:16)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at tryModuleLoad (module.js:446:12)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Function.Module._load (module.js:438:3)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module.require (module.js:497:17)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at require (internal/module.js:20:19)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Object.<anonymous> (/home/vcap/app/app.js:61:22)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module._compile (module.js:570:32)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Object.Module._extensions..js (module.js:579:10)[0m
+   [31m2017-09-05T19:46:08.63+0900 [APP/PROC/WEB/0] ERR     at Module.load (module.js:487:32)[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! code ELIFECYCLE[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! errno 1[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! conv-vr-discovery@3.0.0 start: `node server.js`[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! Exit status 1[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! [0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! Failed at the conv-vr-discovery@3.0.0 start script.[0m
+   [31m2017-09-05T19:46:08.66+0900 [APP/PROC/WEB/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.[0m
+   [31m2017-09-05T19:46:08.69+0900 [APP/PROC/WEB/0] ERR npm ERR! A complete log of this run can be found in:[0m
+   [31m2017-09-05T19:46:08.69+0900 [APP/PROC/WEB/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2017-09-05T10_46_08_667Z-debug.log[0m
+   2017-09-05T19:46:08.70+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2017-09-05T19:46:08.79+0900 [CELL/0] OUT Exit status 0
+   2017-09-05T19:46:08.80+0900 [CELL/0] OUT Destroying container
+   2017-09-05T19:46:08.82+0900 [API/1] OUT Process has crashed with type: "web"
+   2017-09-05T19:46:08.86+0900 [API/1] OUT App instance exited with guid 77d6ba7e-10e1-4ce7-84b2-f83a02799e94 payload: {"instance"=>"312f5af4-a5ae-4295-42d9-5605", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Exited with status 1\n* cancelled\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1504608368800281891, "version"=>"dabef2a4-85aa-4534-80e7-0bf7178fca75"}
+   2017-09-05T19:46:11.14+0900 [CELL/0] OUT Successfully destroyed container

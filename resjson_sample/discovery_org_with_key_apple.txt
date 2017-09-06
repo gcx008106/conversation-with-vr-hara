@@ -1,0 +1,36 @@
+{
+  "count": 5,
+  "return": "title,url,host,crawl_date",
+  "query": "\"apple\",language:(english|en)",
+  "aggregations": [
+    "nested(enriched_title.entities).filter(enriched_title.entities.type:Company).term(enriched_title.entities.text)",
+    "nested(enriched_title.entities).filter(enriched_title.entities.type:Person).term(enriched_title.entities.text)",
+    "term(enriched_title.concepts.text)",
+    "term(host).term(enriched_text.sentiment.document.label)",
+    "term(enriched_text.sentiment.document.label)",
+    "min(enriched_text.sentiment.document.score)",
+    "max(enriched_text.sentiment.document.score)",
+    "filter(enriched_title.entities.type::Company).term(enriched_title.entities.text).timeslice(crawl_date,1day).term(enriched_text.sentiment.document.label)"
+  ],
+  "filter": "crawl_date>2017-07-05T12:00:00+0900,crawl_date<2017-09-05T12:00:00+0900"
+}
+
+
+https://console.bluemix.net/docs/services/discovery/query-reference.html#aggregations
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/44806857/ibm-bluemix-discovery-query-parameter
+
+var queryParams = {
+  query:'CHLOE RICHARDS',
+  return:'title',
+  count:1,
+  aggregations:'nested(enriched_text.entities).filter(enriched_text.entities.type:Person).term(enriched_text.entities.text, count:5)'
+};
+
