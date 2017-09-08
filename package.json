@@ -1,17 +1,14 @@
 {
-  "name": "conv-vr-discovery",
+  "name": "teacher-sma-prot1",
   "version": "3.0.0",
-  "description": "A Visual Recognition sample nodejs application",
+  "description": "Teacher Sma",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/watson-developer-cloud/visual-recognition-nodejs.git"
+    "url": "git+ https://github.com/gcx008106/conversation-with-vr-hara.git"
   },
-  "author": "IBM Corp.",
+  "author": "JFE Syestems, Inc.",
   "contributors": [
-    "James Zhang <jzhang300@us.ibm.com>",
-    "Eva Xiaohui Luo <evaluo_xhl@us.ibm.com>",
-    "Joshua B. Smith <joshua.b.smith@us.ibm.com>",
-    "German Attanasio Ruiz <germanatt@us.ibm.com>"
+    "Takashi Hara <hara@jfe-systems.com>"
   ],
   "license": "Apache-2.0",
   "bugs": {
@@ -77,6 +74,6 @@
     "lint",
     "validate"
   ],
-  "homepage": "https://github.com/watson-developer-cloud/visual-recognition-nodejs#readme",
+  "homepage": " https://github.com/gcx008106/conversation-with-vr-hara#readme",
   "main": "app.js"
 }
