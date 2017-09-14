@@ -1,0 +1,20 @@
+###########################################
+#    teacher-sma-proto1 settings
+###########################################
+# (1) Visual Recognition ( Sma_test_Furutani )
+VISUAL_RECOGNITION_API_KEY = 81fc32afd6d4099e843756062a4c9afec035a73a
+
+# (2) Conversation ( Conversation-5q::SmaProto1 )
+OONVERSATION_USERNAME = 96ed59fb-76c5-41cf-a293-c4424f16db7f
+CONVERSATION_PASSWORD = WEUqOb67HnwB
+CONVERSATION_WORKSPACE_ID = 5e62097b-502c-41a4-9652-bd10a754c1b2
+
+# (3) Discovery ( Discovery-Demo-hara::Discovery News )
+DISCOVERY_USERNAME = 630e6f15-ab51-46cb-be96-86b1676be38b
+DISCOVERY_PASSWORD = zRaiH4aoOORw
+DISCOVERY_ENVIRONMENT_ID = system
+DISCOVERY_COLLECTION_ID = news
+
+
+
+

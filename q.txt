@@ -1,0 +1,21 @@
+
+> teacher-sma-prot2@3.0.0 start C:\blue\vis-conv
+> node server.js
+
+query-builder: fields={"title":"title","url":"url","host":"host","publication_date":"crawl_date","language":"language","title_entity":"enriched_title.entities","title_entity_text":"enriched_title.entities.text","title_entity_type":"enriched_title.entities.type","title_concept_text":"enriched_title.concepts.text","text_document_sentiment_type":"enriched_text.sentiment.document.label","text_document_sentiment_score":"enriched_text.sentiment.document.score"}
+Server running on port: 3000
+[0mPOST /api/classify [32m200 [0m5811.945 ms - -[0m
+/api/query1
+/api/query:environment_id=b9c6ac08-1e20-4129-83d9-9c4e14116fb2
+/api/query:collection_id=2ca94cd0-874b-4324-896a-7d2850293d1e
+/api/query:req.body={"text":"Chihuahua dog"}
+query-builder.build(): query={"text":"Chihuahua dog"}
+query-builder.build1
+query-builder.build2
+query-builder.build3
+query-builder.build(): params={"count":1,"return":"title","query":"\"Chihuahua dog\",language:(english|en)"}
+app.post(/api/query):params={"count":1,"return":"title","query":"\"Chihuahua dog\",language:(english|en)","environment_id":"b9c6ac08-1e20-4129-83d9-9c4e14116fb2","collection_id":"2ca94cd0-874b-4324-896a-7d2850293d1e"}
+/api/query2
+/api/query5 response={"matching_results":0,"aggregations":[{"type":"nested","path":"enriched_title.entities","matching_results":0},{"type":"nested","path":"enriched_title.entities","matching_results":0},{"type":"term","field":"enriched_title.concepts.text","results":[]},{"type":"term","field":"host","results":[]},{"type":"term","field":"enriched_text.sentiment.document.label","results":[]},{"type":"min","field":"enriched_text.sentiment.document.score","value":null},{"type":"max","field":"enriched_text.sentiment.document.score","value":null},{"type":"filter","match":"enriched_title.entities.type::Company","matching_results":0,"aggregations":[{"type":"term","field":"enriched_title.entities.text","results":[]}]}],"results":[]}
+[0mPOST /api/query [32m200 [0m1104.547 ms - 712[0m
+ÉoÉbÉ` ÉWÉáÉuÇèIóπÇµÇ‹Ç∑Ç© (Y/N)? 

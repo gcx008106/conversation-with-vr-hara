@@ -1,0 +1,167 @@
+
+
+{
+  "matching_results": 3,
+  "aggregations": [
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 2,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Company",
+          "matching_results": 0,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 2,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Person",
+          "matching_results": 1,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                {
+                  "key": "Anna K",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_title.concepts.text",
+      "results": [
+        {
+          "key": "2003 albums",
+          "matching_results": 1
+        },
+        {
+          "key": "Apple Inc.",
+          "matching_results": 1
+        },
+        {
+          "key": "Girl",
+          "matching_results": 1
+        },
+        {
+          "key": "ITunes",
+          "matching_results": 1
+        },
+        {
+          "key": "Music videos directed by Melina Matsoukas",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "host",
+      "results": [
+        {
+          "key": "reddit.com",
+          "matching_results": 2,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "negative",
+                  "matching_results": 1
+                },
+                {
+                  "key": "positive",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "huffingtonpost.com",
+          "matching_results": 1,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "positive",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_text.sentiment.document.label",
+      "results": [
+        {
+          "key": "positive",
+          "matching_results": 2
+        },
+        {
+          "key": "negative",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "min",
+      "field": "enriched_text.sentiment.document.score",
+      "value": -0.0393127
+    },
+    {
+      "type": "max",
+      "field": "enriched_text.sentiment.document.score",
+      "value": 0.233954
+    },
+    {
+      "type": "filter",
+      "match": "enriched_title.entities.type::Company",
+      "matching_results": 0,
+      "aggregations": [
+        {
+          "type": "term",
+          "field": "enriched_title.entities.text",
+          "results": [
+            
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "YY0Ko5dchM195YslS6QnqzFoBt-hNDWTfMpv75i2jkU9ZcQvffpwQep4vK4oCv_D",
+      "score": 1.7520511,
+      "text": "3. Include as many details as possible. Certain information may be crucial for solving issues. Please make sure to include the following: Your version of iOS or Mac OS X . Photos or screenshots of the issue Mac or iOS device . If posting a log or crash report, upload it to Gist . If posting the same question in multiple places, include links to the other threads. 4. Please stay calm! We're here to help, and this is the easiest way for us to do that. Fixing problems over the internet is incredibly difficult! Guidelines for Readers 5. Be polite and kind at all times. Rudeness will not be tolerated! Suggesting someone \"Google it\" is a good example of this. People come here for help, so please don't shove them right back out the door. These posts will be deleted. 6. Answers must be within the bounds of Apple\u2019s",
+      "title": "Help formatting 4TB Hard Drive : applehelp"
+    }
+  ]
+}
+

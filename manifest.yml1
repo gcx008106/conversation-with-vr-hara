@@ -1,0 +1,15 @@
+---
+declared-services:
+  visual-recognition-service:
+    label: watson_vision_combined
+    plan: free
+applications:
+- name: teacher-sma-proto1
+  path: .
+  command: npm start
+  memory: 512M
+  services:
+  - Sma_test_Furutani
+  - Discovery-Demo-hara
+  env:
+    NODE_ENV: production

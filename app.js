@@ -300,18 +300,18 @@ app.post('/api/classify', app.upload.single('images_file'), function(req, res) {
 
 // setup query endpoint for news
 app.post('/api/query', (req, res, next) => {
-  //console.log("/api/query1");
-  /*const params = Object.assign({}, queryBuilder.build(req.body), {
-    environment_id: NEWS_ENVIRONMENT_ID,
-    collection_id: NEWS_COLLECTION_ID
-  });*/
 
+  //console.log("/api/query1");
+  //console.log("/api/query:environment_id="+process.env.DISCOVERY_ENVIRONMENT_ID); 
+  //console.log("/api/query:collection_id="+process.env.DISCOVERY_COLLECTION_ID); 
+  //console.log("/api/query:req.body="+JSON.stringify(req.body)); 
   const params = Object.assign({}, queryBuilder.build(req.body), {
     environment_id: process.env.DISCOVERY_ENVIRONMENT_ID,
+	//configuration_id: process.env.DISCOVERY_CONFIGURATION_ID,
     collection_id: process.env.DISCOVERY_COLLECTION_ID
   });
   
-  //console.log(JSON.stringify(params));
+  //console.log("app.post(/api/query):params="+JSON.stringify(params));
   
   //console.log("/api/query2");
   discovery.query(params, (error, response) => {

@@ -1,0 +1,180 @@
+{
+  "matching_results": 4,
+  "aggregations": [
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 4,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Company",
+          "matching_results": 0,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 4,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Person",
+          "matching_results": 2,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                {
+                  "key": "Dan",
+                  "matching_results": 1
+                },
+                {
+                  "key": "Meadows",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_title.concepts.text",
+      "results": [
+        {
+          "key": "Fashion",
+          "matching_results": 2
+        },
+        {
+          "key": "Illegal drug trade",
+          "matching_results": 1
+        },
+        {
+          "key": "Smuggling",
+          "matching_results": 1
+        },
+        {
+          "key": "The Work",
+          "matching_results": 1
+        },
+        {
+          "key": "United States Capitol",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "host",
+      "results": [
+        {
+          "key": "english.manoramaonline.com",
+          "matching_results": 2,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "positive",
+                  "matching_results": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "martinsvillebulletin.com",
+          "matching_results": 1,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "negative",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "theworkedit.com",
+          "matching_results": 1,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "positive",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_text.sentiment.document.label",
+      "results": [
+        {
+          "key": "positive",
+          "matching_results": 3
+        },
+        {
+          "key": "negative",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "min",
+      "field": "enriched_text.sentiment.document.score",
+      "value": -0.602845
+    },
+    {
+      "type": "max",
+      "field": "enriched_text.sentiment.document.score",
+      "value": 0.698802
+    },
+    {
+      "type": "filter",
+      "match": "enriched_title.entities.type::Company",
+      "matching_results": 0,
+      "aggregations": [
+        {
+          "type": "term",
+          "field": "enriched_title.entities.text",
+          "results": [
+            
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "e3bNHPXk3V36BYFbuZh-8dOzdvGS-J7Z6_U-INYnqIysZzMpBnaTdDweLZl28Cd1",
+      "score": 1.8766544,
+      "title": "Ask the Edit Vol. IV, No. Twenty-Six - The Work Edit by Capitol Hill Style The Work Edit by Capitol Hill Style"
+    }
+  ]
+}
+

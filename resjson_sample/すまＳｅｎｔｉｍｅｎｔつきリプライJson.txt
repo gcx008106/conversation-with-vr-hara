@@ -1,0 +1,157 @@
+Appからのクエリー（filterに”post”を加えている。アンド条件としてetiquetteまで加えると結果が0件ヒットになる。）
+  build(query, full) {
+	console.log("query-builder.build(): query="+JSON.stringify(query));
+    const params = {
+      //count: 5,
+	  count: 1,
+      return: `${fields.title}, text, url, enriched_text.sentiment.document.label`,
+	  //return: `text`,
+	  //query: `${query.text},${fields.language}:(english|en)`
+      query: `"${query.text}",${fields.language}:(english|en)`, // this line is orginal.
+	  //filter: `enriched_text.concepts.text:"post",enriched_text.concepts.text:"etiquette"`
+	  filter: `enriched_text.concepts.text:"post"`
+	};
+	
+DiscoveryからのリプライJson
+{
+  "matching_results": 1,
+  "aggregations": [
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 2,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Company",
+          "matching_results": 0,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nested",
+      "path": "enriched_title.entities",
+      "matching_results": 2,
+      "aggregations": [
+        {
+          "type": "filter",
+          "match": "enriched_title.entities.type:Person",
+          "matching_results": 0,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_title.entities.text",
+              "results": [
+                
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_title.concepts.text",
+      "results": [
+        {
+          "key": "National Park Service",
+          "matching_results": 1
+        },
+        {
+          "key": "Olympic Mountains",
+          "matching_results": 1
+        },
+        {
+          "key": "Olympic National Park",
+          "matching_results": 1
+        },
+        {
+          "key": "United States",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "host",
+      "results": [
+        {
+          "key": "grindtv.com",
+          "matching_results": 1,
+          "aggregations": [
+            {
+              "type": "term",
+              "field": "enriched_text.sentiment.document.label",
+              "results": [
+                {
+                  "key": "negative",
+                  "matching_results": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "term",
+      "field": "enriched_text.sentiment.document.label",
+      "results": [
+        {
+          "key": "negative",
+          "matching_results": 1
+        }
+      ]
+    },
+    {
+      "type": "min",
+      "field": "enriched_text.sentiment.document.score",
+      "value": -0.0922346
+    },
+    {
+      "type": "max",
+      "field": "enriched_text.sentiment.document.score",
+      "value": -0.0922346
+    },
+    {
+      "type": "filter",
+      "match": "enriched_title.entities.type::Company",
+      "matching_results": 0,
+      "aggregations": [
+        {
+          "type": "term",
+          "field": "enriched_title.entities.text",
+          "results": [
+            
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "O4WHrrP4Qs41_M-ilaFPj73ttL8Kj3wJqNGf_DxFoOMPoL1nEbSGr14U0-CYRl2g",
+      "score": 2.0687637,
+      "enriched_text": {
+        "sentiment": {
+          "document": {
+            "label": "negative"
+          }
+        }
+      },
+      "text": "Woman, 71, and dog rescued after 6 days lost in Olympic National Park July 25, 2017 By Ryan Brower Late Sunday evening a 71-year-old woman and her dog were rescued after being stranded in Olympic National Park for 6 days. According to The Seattle Times , Sajean E. Geer and her terrier-Chihuahua dog named Yoda were found on July 23 after being lost in the park since July 17. Geer and Yoda were found by a helicopter crew and were eventually located by a ground crew. Both Geer and Yoda were uninjured and only thirsty and hungry. Geer told park officials that she had survived by drinking water she found nearby. According to Peninsula Daily News , Geer\u2019s brother had reported her missing on Wednesday after she had not been heard from since around noon on July 17. A ranger had also found Geer\u2019s empty vehicle at the Obstruction Point",
+      "title": "Woman, 71, and dog rescued after 6 days lost in Olympic National Park",
+      "url": "http:\/\/www.grindtv.com\/hiking\/woman-71-and-dog-rescued-after-6-days-lost-in-olympic-national-park\/"
+    }
+  ]
+}
+
