@@ -189,43 +189,30 @@ function setupUse(params) {
 				//会話パネルへの表示
 				//var discovery_answer_for_payload = "{\"output\":{\"text\":[\""+json.results[0].text+"\"]}}";
 				//alert("use.showResults(): discovery_answer_for_payload="+discovery_answer_for_payload);
+				var answer_string = "";
 				if( json.results[0].text ){
 					var ans = json.results[0].text;
 					var len = ans.length >=144 ?  144 : ans.length;
-					//alert("len:"+len);
-					var ans_trimed = ans.substring(0, len) + "...というのを見つけたよ。";
-					//alert("ans_trimed:"+ans_trimed);
-					var answer_json = {
-						output:{
-							text: [ ans_trimed ]
-						}
-					};
-					JSON.stringify(answer_json);
-					Api.setResponsePayload(JSON.stringify(answer_json)); 
+					answer_string = ans.substring(0, len) + "...というのを見つけたよ。";
 				}
 				var url = "";
 				if( json.results[0].url ){
-					var url = "詳しくはここを見てね⇒"+json.results[0].url;
-					var url_json = {
-						output:{
-							text: [ url ]
-						}
-					};
-					JSON.stringify(url_json);
-					Api.setResponsePayload(JSON.stringify(url_json)); 
+					answer_string += "<br><br>詳しくはここを見てね⇒"+json.results[0].url;
+				} else {
+					alert("no url found here.");
 				}
 				var sentiment = "";
 				if( json.results[0].enriched_text.sentiment.document.label ){
-					var sentiment = "スマ先生からのおすすめ度としては"+json.results[0].enriched_text.sentiment.document.label + "ですね。";
-					var sentiment_json = {
-						output:{
-							text: [ sentiment ]
-						}
-					};
-					JSON.stringify(sentiment_json);
-					Api.setResponsePayload(JSON.stringify(sentiment_json)); 
+					answer_string += "<br><br>スマ先生からのおすすめ度としては"+json.results[0].enriched_text.sentiment.document.label + "ですね。";
+				} else {
+					alert("no sentiment found here.");
 				}
-				//console.log(json);
+				var answer_json = {
+					output:{
+						text: [ answer_string ]
+					}
+				};
+				Api.setResponsePayload(JSON.stringify(answer_json)); 
 			} else {
 				var no_answer_found_for_payload = "{\"output\":{\"text\":[\"Sorry, no documnet discovered.\"]}}";
 				//alert(no_answer_found_for_payload);

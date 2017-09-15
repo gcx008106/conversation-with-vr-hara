@@ -4,7 +4,7 @@ declared-services:
     label: watson_vision_combined
     plan: free
 applications:
-- name: teacher-sma-proto1
+- name: teacher-sma-proto2
   path: .
   command: npm start
   memory: 512M
